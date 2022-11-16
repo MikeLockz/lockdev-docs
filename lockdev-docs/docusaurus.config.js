@@ -8,8 +8,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: "LockDev",
   tagline: "Documentation",
-  url: "https://mikelockz.github.io/lockdev-docs/",
-  baseUrl: "/",
+  url: 'https://mikelockz.github.io/', // Your website URL
+  baseUrl: '/lockdev-docs',
+  projectName: 'mikelockz.github.io',
+  organizationName: 'mikelockz',
+  trailingSlash: false,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
