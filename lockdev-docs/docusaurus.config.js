@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: "LockDev",
   tagline: "Documentation",
-  url: "https://docs.lockdev.com",
+  url: "https://mikelockz.github.io/lockdev-docs/",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
