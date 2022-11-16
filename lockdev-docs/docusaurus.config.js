@@ -60,9 +60,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "My Site",
+        title: "LockDev",
         logo: {
-          alt: "My Site Logo",
+          alt: "LockDev Logo",
           src: "img/logo.svg",
         },
         items: [
@@ -70,11 +70,11 @@ const config = {
             type: "doc",
             docId: "intro",
             position: "left",
-            label: "Tutorial",
+            label: "Snippets",
           },
-          { to: "/blog", label: "Blog", position: "left" },
+          { to: "/guides", label: "Guides", position: "left" },
           {
-            href: "https://github.com/facebook/docusaurus",
+            href: "https://github.com/mikelockz/lockdev-docs",
             label: "GitHub",
             position: "right",
           },
@@ -82,48 +82,8 @@ const config = {
       },
       footer: {
         style: "dark",
-        links: [
-          {
-            title: "Docs",
-            items: [
-              {
-                label: "Tutorial",
-                to: "/docs/intro",
-              },
-            ],
-          },
-          {
-            title: "Community",
-            items: [
-              {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
-              },
-            ],
-          },
-          {
-            title: "More",
-            items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        links: [],
+        copyright: ``,
       },
       prism: {
         theme: lightCodeTheme,

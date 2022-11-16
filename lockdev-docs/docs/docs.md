@@ -14,4 +14,3 @@ GIT_USER=mikelockz yarn deploy
 ## development
 
 npm run start
-
