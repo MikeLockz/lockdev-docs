@@ -9,7 +9,7 @@ const config = {
   title: "LockDev",
   tagline: "Documentation",
   url: 'https://mikelockz.github.io/', // Your website URL
-  baseUrl: '/lockdev-docs',
+  baseUrl: '/lockdev-docs/',
   projectName: 'mikelockz.github.io',
   organizationName: 'mikelockz',
   trailingSlash: false,
