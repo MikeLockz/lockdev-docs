@@ -72,7 +72,7 @@ const config = {
             position: "left",
             label: "Snippets",
           },
-          { to: "/guides", label: "Guides", position: "left" },
+          { to: "/blog", label: "Guides", position: "left" },
           {
             href: "https://github.com/mikelockz/lockdev-docs",
             label: "GitHub",
