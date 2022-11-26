@@ -7,11 +7,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "LockDev",
-  tagline: "Documentation",
-  url: 'https://mikelockz.github.io/', // Your website URL
-  baseUrl: '/lockdev-docs/',
-  projectName: 'mikelockz.github.io',
-  organizationName: 'mikelockz',
+  tagline: "For work and fun",
+  url: "https://docs.lockdev.com/", // Your website URL
+  baseUrl: "/",
+  projectName: "mikelockz.github.io",
+  organizationName: "mikelockz",
   trailingSlash: false,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -46,8 +46,7 @@ const config = {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/mikelockz/lockdev-docs",
+          editUrl: "https://github.com/mikelockz/lockdev-docs",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
