@@ -1,13 +1,20 @@
-# Github Codespaces
+---
+sidebar_position: 1
+---
 
-## publish
+# LockDev Docs
 
-```
-cd lockdev-docs/
-GIT_USER=mikelockz yarn deploy
-```
+## Quick links
 
-## development
+### LockDev
+- [traefik](https://traefik.lockdev.com)
+- [whoami](https://traefik.lockdev.com)
 
-npm run start
+### Home
+- [traefik](https://traefik.home.lockdev.com)
+- [whoami](https://traefik.home.lockdev.com)
+
+### Nuc10
+- [traefik](https://traefik.nuc10.lockdev.com)
+- [whoami](https://whoami.nuc10.lockdev.com)
 
