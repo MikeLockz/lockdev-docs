@@ -22,3 +22,7 @@ Create CNAME file in the `/static` directory which contains the custom domain pa
 ```
 docs.lockdev.com
 ```
+
+## Set docs as homepage
+
+[hepful setup link](https://ricard.dev/how-to-set-docs-as-homepage-for-docusaurus/)

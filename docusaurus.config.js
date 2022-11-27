@@ -40,12 +40,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/MikeLockz/lockdev-docs/tree/trunk/",
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/MikeLockz/lockdev-docs/tree/trunk/",
+          routeBasePath: "/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -58,19 +53,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "LockDev",
+        title: "LockDev Docs",
         logo: {
           alt: "LockDev Logo",
           src: "img/logo.svg",
         },
         items: [
-          {
-            type: "doc",
-            docId: "intro",
-            position: "left",
-            label: "Snippets",
-          },
-          { to: "/blog", label: "Guides", position: "left" },
           {
             href: "https://github.com/mikelockz/lockdev-docs",
             label: "GitHub",
