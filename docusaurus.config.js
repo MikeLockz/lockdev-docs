@@ -6,6 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 async function createConfig() {
   const mdxMermaid = await import('mdx-mermaid')
+  const math = require("remark-math");
+  const katex = require("rehype-katex");
+
 
   /** @type {import('@docusaurus/types').Config} */
   return {
@@ -40,7 +43,8 @@ async function createConfig() {
             // Remove this to remove the "edit this page" links.
             editUrl: "https://github.com/MikeLockz/lockdev-docs/tree/trunk/",
             routeBasePath: "/",
-            remarkPlugins: [mdxMermaid.default],
+            remarkPlugins: [math, mdxMermaid.default],
+            rehypePlugins: [katex],
           },
           theme: {
             customCss: require.resolve("./src/css/custom.css"),
@@ -75,7 +79,28 @@ async function createConfig() {
           theme: lightCodeTheme,
           darkTheme: darkCodeTheme,
         },
+        mermaid: {
+          theme: { light: "neutral", dark: "forest" },
+          // config: {
+          //   startOnLoad: true,
+          //   // theme: "dark",
+          // },
+          options: {
+            maxTextSize: 50,
+            flowchart: {
+              htmlLabels: false,
+            },
+            theme: "forest",
+            logLevel: 3,
+            securityLevel: "loose"
+          },
+        },
       }),
+
+    markdown: {
+      mermaid: true,
+    },
+    themes: ["@docusaurus/theme-mermaid"],
   };
 }
 
