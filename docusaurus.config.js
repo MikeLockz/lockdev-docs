@@ -81,17 +81,7 @@ async function createConfig() {
         },
         mermaid: {
           theme: { light: "neutral", dark: "forest" },
-          // config: {
-          //   startOnLoad: true,
-          //   // theme: "dark",
-          // },
           options: {
-            maxTextSize: 50,
-            flowchart: {
-              htmlLabels: false,
-            },
-            theme: "forest",
-            logLevel: 3,
             securityLevel: "loose"
           },
         },
