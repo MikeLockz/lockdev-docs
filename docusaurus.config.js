@@ -3,82 +3,80 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-const mdxMermaid = await import("mdx-mermaid");
 
+async function createConfig() {
+  const mdxMermaid = await import('mdx-mermaid')
 
-/** @type {import('@docusaurus/types').Config} */
-const config = {
-  title: "LockDev",
-  tagline: "For work and fun",
-  url: "https://docs.lockdev.com/", // Your website URL
-  baseUrl: "/",
-  projectName: "mikelockz.github.io",
-  organizationName: "mikelockz",
-  trailingSlash: false,
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  /** @type {import('@docusaurus/types').Config} */
+  return {
+    title: "LockDev",
+    tagline: "For work and fun",
+    url: "https://docs.lockdev.com/", // Your website URL
+    baseUrl: "/",
+    projectName: "mikelockz.github.io",
+    organizationName: "mikelockz",
+    trailingSlash: false,
+    onBrokenLinks: "throw",
+    onBrokenMarkdownLinks: "warn",
+    favicon: "img/favicon.ico",
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "mikelockz", // Usually your GitHub org/user name.
-  projectName: "lockdev-docs", // Usually your repo name.
+    // Even if you don't use internalization, you can use this field to set useful
+    // metadata like html lang. For example, if your site is Chinese, you may want
+    // to replace "en" with "zh-Hans".
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
-  },
+    i18n: {
+      defaultLocale: "en",
+      locales: ["en"],
+    },
 
-  presets: [
-    [
-      "classic",
-      /** @type {import('@docusaurus/preset-classic').Options} */
+    presets: [
+      [
+        "classic",
+        /** @type {import('@docusaurus/preset-classic').Options} */
+        ({
+          docs: {
+            sidebarPath: require.resolve("./sidebars.js"),
+            // Please change this to your repo.
+            // Remove this to remove the "edit this page" links.
+            editUrl: "https://github.com/MikeLockz/lockdev-docs/tree/trunk/",
+            routeBasePath: "/",
+            remarkPlugins: [mdxMermaid.default],
+          },
+          theme: {
+            customCss: require.resolve("./src/css/custom.css"),
+          },
+        }),
+      ],
+    ],
+
+    themeConfig:
+      /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
       ({
-        docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/MikeLockz/lockdev-docs/tree/trunk/",
-          routeBasePath: "/",
-          remarkPlugins: [mdxMermaid.default],
+        navbar: {
+          title: "LockDev Docs",
+          logo: {
+            alt: "LockDev Logo",
+            src: "img/logo.svg",
+          },
+          items: [
+            {
+              href: "https://github.com/mikelockz/lockdev-docs",
+              label: "GitHub",
+              position: "right",
+            },
+          ],
         },
-        theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+        footer: {
+          style: "dark",
+          links: [],
+          copyright: `2012`,
+        },
+        prism: {
+          theme: lightCodeTheme,
+          darkTheme: darkCodeTheme,
         },
       }),
-    ],
-  ],
+  };
+}
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      navbar: {
-        title: "LockDev Docs",
-        logo: {
-          alt: "LockDev Logo",
-          src: "img/logo.svg",
-        },
-        items: [
-          {
-            href: "https://github.com/mikelockz/lockdev-docs",
-            label: "GitHub",
-            position: "right",
-          },
-        ],
-      },
-      footer: {
-        style: "dark",
-        links: [],
-        copyright: `2012`,
-      },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
-    }),
-};
-
-module.exports = config;
+module.exports = createConfig;
