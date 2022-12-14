@@ -44,6 +44,12 @@ async function createConfig() {
             editUrl: "https://github.com/MikeLockz/lockdev-docs/tree/trunk/",
             routeBasePath: "/",
             remarkPlugins: [math, mdxMermaid.default],
+            // remarkPlugins: [ // NOT WORKING
+            //   [
+            //     mdxMermaid.default,
+            //     { mermaid: { themeVariables: { primaryColor: "#ff0000" } } },
+            //   ],
+            // ],
             rehypePlugins: [katex],
           },
           theme: {
@@ -80,9 +86,9 @@ async function createConfig() {
           darkTheme: darkCodeTheme,
         },
         mermaid: {
-          theme: { light: "neutral", dark: "forest" },
+          theme: { light: "light", dark: "dark" },
           options: {
-            securityLevel: "loose"
+            securityLevel: "loose",
           },
         },
       }),
