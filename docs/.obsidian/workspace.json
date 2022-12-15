@@ -18,8 +18,17 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "18cc1d8fc3ae003a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "diagrams/architecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +110,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "diagrams/architecture.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +131,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "diagrams/architecture.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -136,8 +141,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "26e03f370b8903a2",
+  "active": "18cc1d8fc3ae003a",
   "lastOpenFiles": [
+    "mount_network_drive_on_boot_in_fstab.md",
+    "diagrams/architecture.md",
     "2022-12-02.md",
     "intro.md"
   ]
