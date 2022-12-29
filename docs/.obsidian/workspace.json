@@ -50,9 +50,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "115d3c6e0dc0039d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "tech/how-to-guides/btdu_and_unraid.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "00d8d6102e632e44",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "family/christmas_card_2022.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -179,12 +203,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "59536f3a3d018ecb",
+  "active": "00d8d6102e632e44",
   "lastOpenFiles": [
+    "tech/how-to-guides/unraid_vm_read_only.md",
+    "tech/how-to-guides/btdu_and_unraid.md",
+    "intro.md",
+    "family/christmas_card_2022.md",
     "family/packing_list.md",
     "tech/network/wireguard.md",
-    "family/christmas_card_2022.md",
-    "intro.md",
     "diagrams/architecture.md",
     "mount_network_drive_on_boot_in_fstab.md",
     "2022-12-02.md"
