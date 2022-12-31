@@ -35,18 +35,7 @@ flowchart LR
           traefik.lockdev.com --> lockdev_wg
       end
       subgraph comcast        
-          subgraph garage_unraid
-            subgraph garage_unraid_pad [ ]
-              subgraph garage_ubuntu
-                traefik.home.lockdev.com --> whoami.home.lockdev.com
-                
-                traefik.home.lockdev.com --> glances.home.lockdev.com
-              end
-              
-              subgraph garage_windows
-              end
-            end
-          end
+          
           authelia.lockdev.com --> hass.home.lockdev.com
           authelia.lockdev.com --> nas.home.lockdev.com
           authelia.lockdev.com --> traefik.home.lockdev.com
@@ -127,7 +116,6 @@ flowchart LR
 
   
   lockdev_wg --> lockdev_web
-  lockdev_wg --> garage_ubuntu
   lockdev_wg --> nuc10_ubuntu
   lockdev_wg --> office_windows
 
@@ -162,8 +150,8 @@ flowchart LR
   %% Assigning styles to nodes
     class web Blue;
     class digital_ocean,comcast Green;
-    class github,garage_unraid,nuc10_proxmox,office_unraid Dark_green;
-    class lockdev_web,lockdev_wg,garage_ubuntu,nuc10_ubuntu,hass.home.lockdev.com Yellow;
+    class github,nuc10_proxmox,office_unraid Dark_green;
+    class lockdev_web,lockdev_wg,nuc10_ubuntu,hass.home.lockdev.com Yellow;
     class A Red;
-    class web_pad,garage_unraid_pad,nuc10_proxmox_pad,mnt_backup_pad,mnt_media_pad,media_pad,videos_pad Padding;
+    class web_pad,nuc10_proxmox_pad,mnt_backup_pad,mnt_media_pad,media_pad,videos_pad Padding;
 ```

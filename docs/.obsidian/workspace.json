@@ -74,9 +74,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "041dacfe4de4c058",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "intro.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -142,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "family/christmas_card_2022.md",
+                "file": "intro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "family/christmas_card_2022.md",
+                "file": "intro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "family/christmas_card_2022.md"
+                "file": "intro.md"
               }
             }
           }
@@ -203,12 +215,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "00d8d6102e632e44",
+  "active": "041dacfe4de4c058",
   "lastOpenFiles": [
+    "tech/how-to-guides/resize_virtual_ubuntu_container.md",
+    "family/christmas_card_2022.md",
     "tech/how-to-guides/unraid_vm_read_only.md",
     "tech/how-to-guides/btdu_and_unraid.md",
     "intro.md",
-    "family/christmas_card_2022.md",
     "family/packing_list.md",
     "tech/network/wireguard.md",
     "diagrams/architecture.md",
