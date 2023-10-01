@@ -8,3 +8,6 @@ Take output from Mint or Simplifi and build sankey diagram
 
 ## Differentiators from competitors
 - self hosted
+
+## Example
+- colorado river
