@@ -11,84 +11,15 @@
             "id": "26e03f370b8903a2",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "18cc1d8fc3ae003a",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
                 "file": "family/packing_list.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "10cbaa4886f676f3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "family/packing_list.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "59536f3a3d018ecb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "family/christmas_card_2022.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "115d3c6e0dc0039d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "tech/how-to-guides/btdu_and_unraid.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "00d8d6102e632e44",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "family/christmas_card_2022.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "041dacfe4de4c058",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "intro.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "vertical"
@@ -154,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "intro.md",
+                "file": "family/packing_list.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "intro.md",
+                "file": "family/packing_list.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "intro.md"
+                "file": "family/packing_list.md"
               }
             }
           }
@@ -215,17 +146,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "041dacfe4de4c058",
+  "active": "26e03f370b8903a2",
   "lastOpenFiles": [
-    "tech/how-to-guides/resize_virtual_ubuntu_container.md",
+    "tech/how-to-guides/wireguard_and_traefik.md",
+    "tech/network/wireguard.md",
+    "family/packing_list.md",
     "family/christmas_card_2022.md",
-    "tech/how-to-guides/unraid_vm_read_only.md",
     "tech/how-to-guides/btdu_and_unraid.md",
     "intro.md",
-    "family/packing_list.md",
-    "tech/network/wireguard.md",
-    "diagrams/architecture.md",
-    "mount_network_drive_on_boot_in_fstab.md",
-    "2022-12-02.md"
+    "tech/how-to-guides/lockdown_docs_but_easy-ish_access.md",
+    "tech/to do lists/2022-12-30.md",
+    "tech/how-to-guides/plex_docker_compose_setup.md",
+    "tech/how-to-guides/resize_virtual_ubuntu_container.md"
   ]
 }
